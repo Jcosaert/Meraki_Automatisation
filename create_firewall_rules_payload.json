@@ -1,0 +1,41 @@
+{
+    "rules": [
+      {
+        "comment": "Allow HTTP",
+        "policy": "allow",
+        "protocol": "tcp",
+        "srcPort": "any",
+        "srcCidr": "any",
+        "destPort": "80",
+        "destCidr": "any"
+      },
+      {
+        "comment": "Allow HTTPS",
+        "policy": "allow",
+        "protocol": "tcp",
+        "srcPort": "any",
+        "srcCidr": "any",
+        "destPort": "443",
+        "destCidr": "any"
+      },
+      {
+        "comment": "Allow SSH",
+        "policy": "allow",
+        "protocol": "tcp",
+        "srcPort": "any",
+        "srcCidr": "any",
+        "destPort": "22",
+        "destCidr": "any"
+      },
+      {
+        "comment": "Deny all",
+        "policy": "deny",
+        "protocol": "any",
+        "srcPort": "any",
+        "srcCidr": "any",
+        "destPort": "any",
+        "destCidr": "any"
+      }
+    ]
+  }
+  

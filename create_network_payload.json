@@ -1,0 +1,8 @@
+{
+    "name": "$network_Name",
+    "timeZone": "Europe/Brussels",
+    "tags": [],
+    "disableMyMerakiCom": false,
+    "type": "$type",
+    "productTypes": ["$productTypes"]
+  }

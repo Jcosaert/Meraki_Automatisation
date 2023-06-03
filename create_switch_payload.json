@@ -1,0 +1,64 @@
+{
+  "name": "$switch_Name",
+  "model": "MS220-8P",
+  "address": "$switch_IP",
+  "subnet": "$switch_Subnet",
+  "defaultGateway": "$switch_Gateway",
+  "vlan": "$switch_Vlan",
+  "tags": [],
+  "enableRstp": true,
+  "stpBridgePriority": 32768,
+  "qosRules": [],
+  "ports": [
+      {
+          "name": "Port 1",
+          "enabled": true,
+          "poeEnabled": true,
+          "type": "access",
+          "vlan": 1,
+          "voiceVlan": null,
+          "allowedVlans": "all",
+          "isolationEnabled": false,
+          "rstpEnabled": true,
+          "stpGuard": "disabled",
+          "accessPolicyNumber": null,
+          "linkNegotiation": "Auto negotiate",
+          "portScheduleId": null,
+          "udld": "Alert only",
+          "cdpEnabled": true,
+          "lldpEnabled": true,
+          "macPassthroughEnabled": false,
+          "stickyMacAddressTable": {
+              "vlanId": 1,
+              "stickyAddresses": []
+          },
+          "stormControlEnabled": false,
+          "flexibleStackingEnabled": true
+      },
+      {
+          "name": "Port 2",
+          "enabled": true,
+          "poeEnabled": true,
+          "type": "access",
+          "vlan": 1,
+          "voiceVlan": null,
+          "allowedVlans": "all",
+          "isolationEnabled": false,
+          "rstpEnabled": true,
+          "stpGuard": "disabled",
+          "accessPolicyNumber": null,
+          "linkNegotiation": "Auto negotiate",
+          "portScheduleId": null,
+          "udld": "Alert only",
+          "cdpEnabled": true,
+          "lldpEnabled": true,
+          "macPassthroughEnabled": false,
+          "stickyMacAddressTable": {
+              "vlanId": 1,
+              "stickyAddresses": []
+          },
+          "stormControlEnabled": false,
+          "flexibleStackingEnabled": true
+      }
+  ]
+}

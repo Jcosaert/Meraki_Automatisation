@@ -1,0 +1,8 @@
+{
+    "name": "$network_Name",
+    "networkIds": [
+      "$network_Id1",
+      "$network_Id2",
+      "$network_Id3"
+    ]
+  }
