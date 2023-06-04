@@ -301,7 +301,7 @@ def yes_FW_Rules():
         exit()
 
 
-org_id = "662029145223467796"
+org_id = ""
 network_id = ""
 org_Name = ""
 
@@ -326,14 +326,14 @@ window.mainloop()
 #GUI for the setup of a network
 window = Tk()
 window.geometry('550x300')
-window.title("Setup WIFI")
+window.title("Setup Network")
 
-network_Name_lbl = Label(window, text= "WIFI name: ")
+network_Name_lbl = Label(window, text= "Network name: ")
 network_Name_lbl.grid(column=0,row=1)
 network_Name = Entry(window, width=50)
 network_Name.grid(column=1, row=1)
 
-next_Btn = Button(window, text="next",command=next_SSID)
+next_Btn = Button(window, text="next",command=next_Network)
 next_Btn.grid(column=3, row=2)
 skip_Btn = Button(window, text="skip",command=skip)
 skip_Btn.grid(column=2, row=2)
