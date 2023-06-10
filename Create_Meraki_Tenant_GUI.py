@@ -210,44 +210,6 @@ def next_SSID():
 
     window.destroy() 
 
-def next_Switch():
-
-#     #Load the JSON payload for creating a new switch from a file
-#     with open("create_switch_payload.json", "r") as f:
-#         switch_payload_template = f.read()
-
-#     #fill in the variables using string template 
-#     switch_payload = Template(switch_payload_template).substitute(
-    
-#         switch_Name = switch_Name.get(),
-#         switch_IP = switch_IP.get(),
-#         switch_Subnet = switch_Subnet.get(),
-#         switch_Gateway = switch_Gateway.get(),
-#         switch_Vlan = switch_Vlan.get(),
-
-#         )
-    
-#     #Convert the payload to JSON format
-#     switch_json_payload = json.loads(switch_payload)
-    
-
-#     #Send the POST request to create the new switch
-#     response = requests.post(
-#         f"https://api.meraki.com/api/v1/organizations/{org_id}/networks",
-#         data=json.dumps(switch_json_payload),
-#         headers=headers
-#         )
-
-#     # Check the response status code
-#     if response.status_code == 201:
-#         print(f"Organization '{org_Name.get()}' created successfully!")
-#     else:
-#         print(f"Error creating organization: {response.text}")
-#         exit()
-
-#     window.destroy()
-    exit
-
 def next_devices():
     
     #Load the JSON payload for creating a new client VPN from a file
@@ -397,44 +359,6 @@ yes_Btn.grid(column=1, row=0)
 no_Btn = Button(window, text="no", command=skip)
 
 window.mainloop()
-
-# #GUI for the setup for a switch
-# window = Tk()
-# window.geometry('500x300')
-# window.title("Setup switch")
-
-# switch_Name_lbl = Label(window, text="switch name:")
-# switch_Name_lbl.grid(column=0, row=0)
-# switch_Name = Entry(window, width=50)
-# switch_Name.grid(column=1, row=0)
-
-# switch_IP_lbl = Label(window, text="switch IP:")
-# switch_IP_lbl.grid(column=0, row=1)
-# switch_IP = Entry(window, width=50)
-# switch_IP.grid(column=1, row=1)
-
-# switch_Subnet_lbl = Label(window, text="switch subnet:")
-# switch_Subnet_lbl.grid(column=0, row=2)
-# switch_Subnet = Entry(window, width=50)
-# switch_Subnet.grid(column=1, row=2)
-
-# switch_Gateway_lbl = Label(window, text="default gateway:")
-# switch_Gateway_lbl.grid(column=0, row=3)
-# switch_Gateway = Entry(window, width=50)
-# switch_Gateway.grid(column=1, row=3)
-
-# switch_Vlan_lbl = Label(window, text="Switch VLAN:")
-# switch_Vlan_lbl.grid(column=0, row=4)
-# switch_Vlan = Entry(window, width=50)
-# switch_Vlan.grid(column=1, row=4)
-
-# next_Btn = Button(window, text="next",command=next_Switch)
-# next_Btn.grid(column=3, row=5)
-# skip_Btn = Button(window, text="skip",command=skip)
-# skip_Btn.grid(column=2, row=5)
-
-# window.mainloop()
-
 
 #GUI for the setup of a client VPN
 window = Tk()
